@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import components for routing
-import {Home} from '../pages/home/Home';
 import Header from '../components/header/Header';
 import {NotFoundPage} from "../pages/NotFoundPage"
+import { HomePage } from '../pages/HomePage';
 
 // Define route components
 const AppRoutes: React.FC = () => {
@@ -12,7 +12,7 @@ const AppRoutes: React.FC = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/acessorios" element={<div>Acessórios Page</div>} />
         <Route path="/biquinis" element={<div>Biquinis Page</div>} />
         <Route path="/conjuntos" element={<div>Conjuntos Page</div>} />
